@@ -1,21 +1,18 @@
 import React from 'react';
-import './App.scss';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import UserList from './components/UserList';
 
-interface Props {
-  onClick: () => void;
-  children: React.ReactNode;
+const queryClient = new QueryClient();
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <div>
+        <h1>User Manager</h1>
+        <UserList />
+      </div>
+    </QueryClientProvider>
+  );
 }
 
-export const Provider: React.FC<Props> = React.memo(({ onClick, children }) => (
-  <button type="button" onClick={onClick}>
-    {children}
-  </button>
-));
-
-export const App: React.FC = () => {
-  return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>TodoList</Provider>
-    </div>
-  );
-};
+export default App;

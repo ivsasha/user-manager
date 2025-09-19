@@ -1,9 +1,26 @@
-# React TypeScript Starter Pack
+# 📱 Todo App Mobile
 
-To use this template click `Use this template`
+Веб додаток для управління користувачами з інтуїтивним інтерфейсом та зручною функціональністю.
 
-### Available Scripts
+## ✨ Функціональність
 
-`Deploy` - available to deploy your application to gh-pages, to deploy the project, change the second line of code in package.json, specifically the homepage value, from "." to the repository name
+- ➕ **Додавання користувачів**
+- 📝 **Редагування користувачів** на місці
+- 💾 **Робота з API** даних
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+## 🛠 Технології
+
+- **TypeScript** - типізація коду
+- **React Hooks** - управління станом
+- **Material UI** - стилізація
+- **React Query** - зручна робота з API
+
+
+## 🌐 Демо
+
+🔗 **[Переглянути живий проєкт](https://ivsasha.github.io/user-manager/)**
+
+## 📸 Скріншоти
+
+![Скріншот з додатку](image.png)
+![Модальне вікно](image-1.png)
